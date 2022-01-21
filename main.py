@@ -12,8 +12,3 @@ website = str(input("Enter Website: "))
 # Hast the password 
 
 # Store the password into a file
-
-#######
-
-def search():
-        # search by username/website
