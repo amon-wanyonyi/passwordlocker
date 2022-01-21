@@ -28,5 +28,18 @@ f.close()
 
 print(f"Here's your password: {password}")
 
+
 def search():
-    pass
+    username_or_website = str(input("Do you want to search for username or website? "))
+    value = str(input("What value? "))
+    f = open("password.txt", "r")
+    for line in f:
+        info = line.split("-")
+        if username_or_website == "username":
+            if value == info[0]:
+                return info[2]
+            # search by username
+        else:
+            # search by website
+            if value == info[1]:
+                return info[2]
