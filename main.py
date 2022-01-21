@@ -1,14 +1,23 @@
 # Password Manager
+import random
+import string
+
+
 def store_password():
-    
     # Username
     username = str(input("Enter Username: "))
+
 
 # Website
 website = str(input("Enter Website: "))
 
 # Generate Random Password
+string.ascii_letters
 
-# Hast the password 
+
+# Hast the password
 
 # Store the password into a file
+
+def search():
+    pass
