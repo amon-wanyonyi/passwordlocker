@@ -2,10 +2,13 @@
 import random
 import string
 
+# import username as username
+import username
+
 
 def store_password():
-    # Username
-   username = str(input("Your username: "))
+    # Usernames
+    username: str = str(input("Your username: "))
 
 
 # Website
@@ -16,11 +19,14 @@ digit = int(input("How any digits do you want? (integer only)"))
 password = ""
 for i in range(digit):
     char = random.choice(string.ascii_letters)
-
-
-# Hast the password
+    password += char
 
 # Store the password into a file
+f = open("password.txt", "a")
+f.write(f"{username}-{website}-{str(password)}\n")
+f.close()
+
+print(f"Here's your password: {password}")
 
 def search():
     pass
