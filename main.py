@@ -43,3 +43,16 @@ def search():
             # search by website
             if value == info[1]:
                 return info[2]
+
+    # store_password()
+    result = search()
+
+    if result == None:
+        print("No result found")
+    else:
+        print(f"Here's your password: {result}")
+
+        """
+        Salt: made up of random bits (0, 1) added to each password
+        instance before its hashing. (auth0.com)
+        """
